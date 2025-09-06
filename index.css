@@ -1,0 +1,28 @@
+body{
+    font-family: "Arial";
+}
+.cv-header img{
+    width: 150px;
+    padding-left: 80%;
+}
+.cv-header a{
+    font-size: 1.3em;
+    padding: 200px;
+}
+
+
+.cv-header h1{
+    text-align: center;
+    font-family: 'LTR Principia Variable Regular';
+    border:4px solid black;
+}
+
+.cv-interet img{
+    width: 75px;
+    height:50px;
+    padding: 75px;
+}
+.cv-interet li{
+    display: inline;
+    padding: 75px;
+}
