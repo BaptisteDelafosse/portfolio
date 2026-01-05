@@ -29,6 +29,6 @@ body{
     padding: 75px;
 
 }
-
-
-
+.cv-header p{
+    color: green;
+}
