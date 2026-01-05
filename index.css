@@ -10,7 +10,9 @@ body{
     padding: 200px;
 }
 
-
+.cv-header{
+    background-color: orange;
+}
 .cv-header h1{
     text-align: center;
     font-family: 'LTR Principia Variable Regular';
@@ -27,4 +29,5 @@ body{
     padding: 75px;
 
 }
+
 
