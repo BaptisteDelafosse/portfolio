@@ -4,54 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Portfolio</title>
+    <title>Projets - Baptiste Delafosse</title>
+    <script>
+        function toggleProjet(id) {
+            const zone = document.getElementById(id);
+            if (zone.style.display === "block") {
+                zone.style.display = "none";
+            } else {
+                zone.style.display = "block";
+            }
+        }
+    </script>
 </head>
-<script>
-function toggleProjet(id) {
-    const zone = document.getElementById(id);
-    zone.style.display = (zone.style.display === "block") ? "none" : "block";
-}
-</script>
 <body>
+    <header class="cv-header">
+        <h1>DELAFOSSE Baptiste</h1>
+        <section>
+            <img src="me.jpg" alt="Photo de profil">
+            <p id="address">25 Rue de la Butte Chaumond</p>
+            <p id="tel">06 33 99 07 34</p>
+        </section>
+        <a href="index.html">À propos de moi</a>
+        <a href="mailto:delafossebaptiste91@gmail.com">Mon mail</a>
+        <a href="https://www.linkedin.com/in/baptiste-delafosse-31b5b2327/">Mon LinkedIn</a>
+        <a href="competence.html">Mes compétences</a>
+        <a href="experience.html">Mes expériences pro</a>
+        <a href="veille.html">Mon sujet de veille</a>
+        <a href="projet.html">Mes projets</a>
+        <hr>
+    </header>
 
-<header class="cv-header">
-    <h1>DELAFOSSE Baptiste</h1>
-    <section>
-        <img src="me.jpg">
-        <p id="address">25 Rue de la Butte Chaumond</p>
-        <p id="tel">06 33 99 07 34</p>
-    </section>
+    <div class="projet">
+        <button class="btn-projet" onclick="toggleProjet('p1')">Projet 1</button>
+        <div id="p1" class="projet-content">
+            <h2>Projet 1 – Description</h2>
+            <p>
+                Voici une énorme zone de texte qui apparaît dynamiquement lorsque tu cliques sur "Projet 1".
+                Tu peux mettre ici la description complète de ton projet, les objectifs, les technologies utilisées,
+                les captures d'écran, etc.
+            </p>
+        </div>
 
-    <a href="index.html">Moi</a>
-    <a href="mailto:delafossebaptiste91@gmail.com">Mon mail</a>
-    <a href="https://www.linkedin.com/in/baptiste-delafosse-31b5b2327/">Mon LinkedIn</a>
-    <a href="competence.html">Mes competences</a>
-    <a href="experience.html">Mes experiences pro</a>
-    <a href="veille.html">Mon sujet de veille</a>
-    <a href="projet.html">Mes projets</a>
-    <hr>
-</header>
+        <hr><br>
 
-<div class="projet">
-    <button class="btn-projet" onclick="toggleProjet('p1')">Projet 1</button>
-    <div id="p1" class="projet-content">
-        <h2>Projet 1 – Description</h2>
-        <p>
-            Voici une énorme zone de texte qui apparaît dynamiquement lorsque tu cliques sur "Projet 1".
-            Tu peux mettre ici la description complète de ton projet, les objectifs, les technologies utilisées,
-            les captures d’écran, etc.
-        </p>
+        <button class="btn-projet" onclick="toggleProjet('p2')">Projet 2</button>
+        <div id="p2" class="projet-content">
+            <h2>Projet 2 – Description</h2>
+            <p>
+                Même principe que pour le projet 1. Ce texte apparaît dynamiquement dans la même page.
+            </p>
+        </div>
     </div>
-
-    <hr><br>
-
-    <button class="btn-projet" onclick="toggleProjet('p2')">Projet 2</button>
-    <div id="p2" class="projet-content">
-        <h2>Projet 2 – Description</h2>
-        <p>
-            Même principe que pour le projet 1. Ce texte apparaît dynamiquement dans la même page.
-        </p>
-    </div>
-</div>
 </body>
 </html>
