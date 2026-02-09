@@ -21,6 +21,16 @@
         <a href="veille.html">Mon sujet de veille</a>
         <a href="projet.html">Mes projets</a>
         <a href="lien.html">Mes liens</a>
+        <script>
+            function toggleProjet(id) {
+                const zone = document.getElementById(id);
+                if (zone.style.display === "block") {
+                    zone.style.display = "none";
+                } else {
+                    zone.style.display = "block";
+                }
+            }
+        </script>
         <hr>
     </header>
     <br>
@@ -39,9 +49,14 @@
         <ul>
             <li>Restauration des compte @ecoleducasse</li>
             <li>Mise a jour d'un ordinateur de Windows 10 vers Windows 11</li>
-            <li>>Réunion chaque semaine avec le ServiceDesk</li>
-            <img src="sommet.png">
+            <li>Réunion chaque semaine avec le ServiceDesk</li>
         </ul>
-    </div>  
+    </div>
+    <div class="projet">
+        <button class="btn-projet" onclick="toggleProjet('p1')">Infrastructure</button>
+        <div id="p1" class="projet-content">
+            <img src="sommet.png">
+        </div>
+    </div>
 </body>
 </html>
