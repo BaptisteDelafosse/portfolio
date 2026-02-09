@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Expériences - Baptiste Delafosse</title>
+    <script>
+        function toggleProjet(id) {
+            const zone = document.getElementById(id);
+            if (zone.style.display === "block") {
+                zone.style.display = "none";
+            } else {
+                zone.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="cv-header">
@@ -21,16 +31,6 @@
         <a href="veille.html">Mon sujet de veille</a>
         <a href="projet.html">Mes projets</a>
         <a href="lien.html">Mes liens</a>
-        <script>
-            function toggleProjet(id) {
-                const zone = document.getElementById(id);
-                if (zone.style.display === "block") {
-                    zone.style.display = "none";
-                } else {
-                    zone.style.display = "block";
-                }
-            }
-        </script>
         <hr>
     </header>
     <br>
