@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>CV Étudiant - Baptiste Delafosse</title>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+
+            try {
+                const response = await fetch('email.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                if (response.ok) {
+                    window.location.href = 'index.html?success=1';
+                } else {
+                    window.location.href = 'index.html?error=mail';
+                }
+            } catch (error) {
+                window.location.href = 'index.html?error=network';
+            }
+        });
+    </script>
 </head>
 <body>
     <header class="cv-header">
@@ -24,7 +44,7 @@
     </header>
     <br><br>
     <div class="contact">
-        <form action="email.php" method="post">
+        <form action="/email.php" method="post">
           <ul>
             <li>
               <label for="name">Nom&nbsp;:</label>
