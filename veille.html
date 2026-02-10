@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Expériences - Baptiste Delafosse</title>
+    <title>CV Étudiant - Baptiste Delafosse</title>
+    <script>
+        function toggleProjet(id) {
+            const zone = document.getElementById(id);
+            if (zone.style.display === "block") {
+                zone.style.display = "none";
+            } else {
+                zone.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="cv-header">
@@ -23,24 +33,25 @@
         <hr>
     </header>
 
-    <div class="cv-work">
-        <h3>MJC LA KAB's - La Celle-Saint-Cloud</h3>
-        <p>Stage d'une semaine - Juin 2021</p>
-        <ul>
-            <li>Je m'occupais des montages vidéo des activités proposées par ma société.</li>
-            <li>Gestion des contenus multimédias</li>
-            <li>Communication visuelle</li>
-        </ul>
+    <div class="cv-myself">
+        <h2><u>Ma veille :</u></h2>
+        <i><h4>Les solutions de cloud souverains</h4></i>
+        <br><br>
+        <strong>Cloud ? Qu'est ce que c'est ?</strong>
+        <p>Le Cloud est une pratique constituant a utiliser des serveurs distants stockés dans des datacenters au lieu de stocker les données sur un serveur hébergé en local.</p>
+        <br><br>
+        <strong>Et le cloud souverain ?</strong>
+        <p>Le Cloud souverain est une infrastructure Cloud située en France (<strong><u>souveraineté numérique francaise</u></strong> ou en Union Européenne<strong><u>souveraineté numérique francaise</u></strong>), respectant ainsi les regles de protections de données de la RGPD</p>
     </div>
     <br>
-    <div class="cv-work">
-        <h3>Ecole de Formation Alain Ducasse - Meudon La Foret <img src="src.jpc"></img></h3>
-        <p>Stage d'un mois - Juin 2024 - Juillet 2025</p>
-        <ul>
-            <li>J'occupais le poste de support informatique de niveau 1.</li>
-            <li>Gestion de parc informatique ServiceNow</li>
-            <li>>Ticketing ServiceNow</li>
+    <button class="btn-projet" onclick="toggleProjet('p2')">Les differents cloud souverains</button>
+    <div id="p2" class="projet-content">
+        <h2>Projet 2 – Description</h2>
+        <ul style="list-style-type:square">
+            <li>OVH : France</li>
+            <li>T-System : Allemagne</li>
+            <li>Swisscom Cloud: Suisse</li>
         </ul>
-    </div>       
+    </div>
 </body>
 </html>
