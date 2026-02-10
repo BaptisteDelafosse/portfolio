@@ -291,6 +291,7 @@ hr {
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 1em;
+  background-color: #F5FFFE;
 }
 
 .contact ul {
@@ -334,4 +335,5 @@ hr {
 .conact button {
   margin-left: 0.5em;
 }
+
 
